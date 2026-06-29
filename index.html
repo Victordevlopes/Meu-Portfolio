@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Lopes | Desenvolvedor Full Stack</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ===== FUNDO ESPACIAL ===== -->
+    <div id="space"></div>
+
+    <!-- ===== BRILHO SEGUINDO O MOUSE ===== -->
+    <div id="glow"></div>
+
+    <!-- ===== NAVEGAÇÃO ===== -->
+    <nav>
+        <a href="index.html" class="logo">Victor Lopes</a>
+        <button id="translate" class="btn-destaque">English</button>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="perfil" data-aos="fade-right" data-aos-duration="1000">
+            <img src="./assets/victor lopes.JPG" alt="Victor Lopes" />
+            <p class="mini-bio" data-aos="fade-up" data-aos-delay="200">
+                📚 29 anos · São Paulo - Brasil<br />
+                <span>Sempre aprendendo, sempre criando.</span>
+            </p>
+        </div>
+
+        <div class="hero" data-aos="fade-left" data-aos-duration="1000">
+            <h1 id="title"></h1>
+            <p id="desc" data-aos="fade-up" data-aos-delay="300">
+                Desenvolvo aplicações web, automações e soluções inteligentes utilizando Python, JavaScript, HTML e CSS.
+            </p>
+            <div class="botoes" data-aos="fade-up" data-aos-delay="500">
+                <a href="projetos.html" class="btn">Ver Projetos</a>
+                <a href="https://wa.me/5511956022453" target="_blank" class="btn destaque">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section id="sobre" data-aos="fade-up" data-aos-duration="800">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-card" onclick="this.classList.toggle('expandido')">
+            <p class="resumo">
+                Sou Desenvolvedor Full Stack Júnior com aproximadamente 1 ano de experiência prática em desenvolvimento de aplicações web, automação de processos e estudos em Inteligência Artificial.
+            </p>
+            <p class="detalhes" style="display: none;">
+                Atualmente estou em busca de oportunidades de trabalho e projetos freelancers onde eu possa contribuir com soluções modernas e continuar evoluindo profissionalmente.
+            </p>
+            <span class="toggle-hint">Clique para expandir</span>
+        </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section data-aos="fade-up" data-aos-duration="800">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fab fa-python"></i> Python
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fab fa-js"></i> JavaScript
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fab fa-html5"></i> HTML5
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fab fa-css3-alt"></i> CSS3
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="500">
+                <i class="fas fa-brain"></i> Inteligência Artificial
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="600">
+                <i class="fas fa-robot"></i> Automação
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="700">
+                <i class="fab fa-git-alt"></i> Git
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="800">
+                <i class="fab fa-github"></i> GitHub
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ÍCONES FLUTUANTES ===== -->
+    <div class="social-float">
+        <a href="https://wa.me/5511956022453" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/Victordevlopes" target="_blank" class="social-icon github" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/vitaosl_" target="_blank" class="social-icon instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
