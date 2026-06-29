@@ -25,14 +25,14 @@ const translations = {
             title: "Meus Projetos",
             proj_title: "Gerador de Ondas Binaurais",
             proj_desc: "Aplicação web desenvolvida para gerar ondas binaurais com diferentes focos ao usuário, permitindo o download da mídia gerada.",
-            proj_tech: "Python · HTML · CSS · JavaScript",
+            proj_tech: '<i class="fab fa-python"></i> Python · <i class="fab fa-html5"></i> HTML · <i class="fab fa-css3-alt"></i> CSS · <i class="fab fa-js"></i> JavaScript',
             btn_acessar: "Acessar Projeto"
         },
         en: {
             title: "My Projects",
             proj_title: "Binaural Waves Generator",
             proj_desc: "Web application developed to generate binaural waves with different focuses for the user, allowing download of the generated media.",
-            proj_tech: "Python · HTML · CSS · JavaScript",
+            proj_tech: '<i class="fab fa-python"></i> Python · <i class="fab fa-html5"></i> HTML · <i class="fab fa-css3-alt"></i> CSS · <i class="fab fa-js"></i> JavaScript',
             btn_acessar: "Access Project"
         }
     },
@@ -85,7 +85,6 @@ function applyTranslation() {
         const skillsTitle = document.querySelector('section:nth-of-type(2) h2');
 
         if (titleEl && data.title) {
-            // Se o Typed.js já tiver sido iniciado, reinicia
             if (window.typed) {
                 window.typed.destroy();
             }
@@ -115,13 +114,19 @@ function applyTranslation() {
         const projTitle = document.getElementById('proj-title');
         const projDesc = document.getElementById('proj-desc');
         const projTech = document.getElementById('proj-tech');
-        const btnAcessar = document.querySelector('.projeto .btn');
+        const btnAcessar = document.getElementById('btn-acessar');
 
         if (title) title.innerText = data.title;
-        if (projTitle) projTitle.innerText = data.proj_title;
+        if (projTitle) {
+            // Mantém o ícone fixo e troca só o texto
+            const icon = projTitle.querySelector('i');
+            projTitle.innerHTML = '';
+            if (icon) projTitle.appendChild(icon);
+            projTitle.appendChild(document.createTextNode(' ' + data.proj_title));
+        }
         if (projDesc) projDesc.innerText = data.proj_desc;
         if (projTech) projTech.innerHTML = data.proj_tech;
-        if (btnAcessar) btnAcessar.innerHTML = `<i class="fas fa-external-link-alt"></i> ${data.btn_acessar}`;
+        if (btnAcessar) btnAcessar.innerText = data.btn_acessar;
     }
 
     // Página contato
@@ -150,7 +155,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Iniciar animações AOS
     if (typeof AOS !== 'undefined') {
         AOS.init({
             duration: 800,
@@ -159,14 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Aplicar tradução inicial
     applyTranslation();
-
-    // Se for a página index e o Typed já estiver configurado, manter
-    const page = getPage();
-    if (page === 'index' && document.getElementById('title')) {
-        // O Typed já foi iniciado pelo applyTranslation
-    }
 });
 
 // ===== BRILHO SEGUINDO O MOUSE =====
