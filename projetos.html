@@ -1,72 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Projetos | Victor Lopes</title>
 
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
+
 <body>
 
-    <!-- Fundo espacial -->
     <div id="space"></div>
-
-    <!-- Brilho seguindo o mouse -->
     <div id="glow"></div>
 
-    <!-- Navegação -->
     <nav>
         <a href="index.html" class="logo">Victor Lopes</a>
-        <button id="translate" class="btn-destaque">English</button>
+
+        <button id="translate" class="btn-destaque">
+            English
+        </button>
     </nav>
 
-    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-    <section style="padding-top: 40px;">
-        <h1 id="page-title" data-aos="fade-up" data-aos-duration="800">
+    <section class="projetos-section">
+
+        <h1 id="page-title"
+            data-aos="fade-up"
+            data-aos-duration="800">
             Meus Projetos
         </h1>
+        
+        <!-- PROJETO 1 -->
+        <div class="projeto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800">
 
-        <div class="projeto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-            <h2 id="proj-title">
-                <i class="fas fa-wave-square" style="color: #3b82f6; margin-right: 10px;"></i>
-                Gerador de Ondas Binaurais
+            <h2>
+                <i class="fas fa-wave-square"
+                    style="color: #3b82f6; margin-right: 10px;"></i>
+
+                <span class="project-title">
+                    Gerador de Ondas Binaurais
+                </span>
             </h2>
-            <p id="proj-desc">
+
+            <p class="project-desc">
                 Aplicação web desenvolvida para gerar ondas binaurais com diferentes focos ao usuário, permitindo o download da mídia gerada.
             </p>
-            <p id="proj-tech">
+
+            <p class="project-tech">
                 <i class="fab fa-python"></i> Python ·
                 <i class="fab fa-html5"></i> HTML ·
                 <i class="fab fa-css3-alt"></i> CSS ·
                 <i class="fab fa-js"></i> JavaScript
             </p>
-            <a class="btn destaque" href="https://victordevlopes.github.io/gerador-de-ondas/" target="_blank">
+
+            <a class="btn destaque"
+                href="https://victordevlopes.github.io/gerador-de-ondas/"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 <i class="fas fa-external-link-alt"></i>
-                <span id="btn-acessar">Acessar Projeto</span>
+
+                <span class="btn-acessar">
+                    Acessar Projeto
+                </span>
+
             </a>
+
         </div>
+
+
+        <!-- PROJETO 2 -->
+        <div class="projeto"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-duration="800">
+
+            <h2>
+                <i class="fas fa-eye"
+                    style="color: #3b82f6; margin-right: 10px;"></i>
+
+                <span class="project-title">
+                    Site Tatiane Lash Designer
+                </span>
+            </h2>
+
+            <p class="project-desc">
+                Site institucional e landing page responsiva desenvolvida para uma Lash Designer, com apresentação de serviços, galeria, agendamento e integração com WhatsApp.
+            </p>
+
+            <p class="project-tech">
+                <i class="fab fa-html5"></i> HTML ·
+                <i class="fab fa-css3-alt"></i> CSS ·
+                <i class="fab fa-js"></i> JavaScript
+            </p>
+
+            <a class="btn destaque"
+                href="https://github.com/Victordevlopes/Site-Tatiane-Lash-Designer"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fas fa-external-link-alt"></i>
+
+                <span class="btn-acessar">
+                    Acessar Projeto
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <!-- PROJETO 3 -->
+        <div class="projeto"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="800">
+
+            <h2>
+                <i class="fas fa-spa"
+                    style="color: #3b82f6; margin-right: 10px;"></i>
+
+                <span class="project-title">
+                    Protocolo Recuperação do Cabelo
+                </span>
+            </h2>
+
+            <p class="project-desc">
+                Sistema completo de recuperação capilar com foco em fortalecimento, hidratação e reversão de danos, incluindo rotina de aplicação, cronograma capilar e monitoramento da evolução.
+            </p>
+
+            <p class="project-tech">
+                <i class="fab fa-html5"></i> HTML
+            </p>
+
+            <a class="btn destaque"
+                href="https://github.com/Victordevlopes/protocolo-recupera-o-do-cabelo"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fas fa-external-link-alt"></i>
+
+                <span class="btn-acessar">
+                    Acessar Projeto
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <!-- PROJETO 4 -->
+        <div class="projeto"
+            data-aos="fade-up"
+            data-aos-delay="650"
+            data-aos-duration="800">
+
+            <h2>
+                <i class="fas fa-globe-americas"
+                    style="color: #3b82f6; margin-right: 10px;"></i>
+
+                <span class="project-title">
+                    Guia Prático de Compras Paraguai 2026
+                </span>
+            </h2>
+
+            <p class="project-desc">
+                Landing page comercial desenvolvida para apresentar um guia digital sobre compras no Paraguai, com foco em conversão, responsividade e experiência do usuário.
+            </p>
+
+            <p class="project-tech">
+                <i class="fab fa-html5"></i> HTML ·
+                <i class="fab fa-css3-alt"></i> CSS ·
+                <i class="fab fa-js"></i> JavaScript
+            </p>
+
+            <a class="btn destaque"
+                href="https://github.com/Victordevlopes/Guia-pr-tico-de-compras-Paraguai-2026-"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fas fa-external-link-alt"></i>
+
+                <span class="btn-acessar">
+                    Acessar Projeto
+                </span>
+
+            </a>
+
+        </div>
+
     </section>
 
-    <!-- ===== ÍCONES FLUTUANTES (já estão em todas as páginas) ===== -->
+
     <div class="social-float">
-        <a href="https://wa.me/5511956022453" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+
+        <a href="https://wa.me/5511956022453"
+            target="_blank"
+            class="social-icon whatsapp"
+            aria-label="WhatsApp">
+
             <i class="fab fa-whatsapp"></i>
+
         </a>
-        <a href="https://github.com/Victordevlopes" target="_blank" class="social-icon github" aria-label="GitHub">
+
+        <a href="https://github.com/Victordevlopes"
+            target="_blank"
+            class="social-icon github"
+            aria-label="GitHub">
+
             <i class="fab fa-github"></i>
+
         </a>
-        <a href="https://www.instagram.com/vitaosl_" target="_blank" class="social-icon instagram" aria-label="Instagram">
+
+        <a href="https://www.instagram.com/vitaosl_"
+            target="_blank"
+            class="social-icon instagram"
+            aria-label="Instagram">
+
             <i class="fab fa-instagram"></i>
+
         </a>
+
     </div>
 
-    <!-- ===== SCRIPTS ===== -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
