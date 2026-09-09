@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ===== AOS =====
 
-    if (typeof AOS !== 'undefined') {
+        if (typeof AOS !== 'undefined') {
 
         AOS.init({
 
@@ -421,7 +421,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             once: false,
 
-            mirror: true
+            mirror: true,
+
+            disable: function () {
+                return window.innerWidth < 769;
+            }
 
         });
 
